@@ -24,6 +24,8 @@ public final class WalaExamplesProperties {
   public static final String DOT_EXE = "dot_exe"; //$NON-NLS-1$
 
   public final static String PROPERTY_FILENAME = "wala.examples.properties"; //$NON-NLS-1$
+  
+  public static final String SVGVIEW_EXE = "svgview_exe";
 
   public static Properties loadProperties()  {
 
