@@ -1,0 +1,6 @@
+[submodule "WALA-Analyses"]
+	path = WALA-Analyses
+	url = git@github.com:MaxSchlueter/WALA-Analyses.git
+[submodule "Examples"]
+	path = Examples
+	url = https://github.com/wala/Examples
