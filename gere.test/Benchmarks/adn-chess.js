@@ -124,7 +124,7 @@ window.setInterval = function(fun, time) {
 
 window.clearInterval = function() {};
 
-print("end of stub");
+//print("end of stub");
 // STUB end
 
 var chesscomnotifier = {
@@ -243,12 +243,12 @@ var chesscomnotifier = {
                 // or from "userName ... /home/send_message.html?id=userId"
                 var myre1 = new RegExp("track_user_id=([0-9]+)\\S+" + chesscomnotifier.userName, "i");
                 var myre2 = new RegExp(chesscomnotifier.userName + "[\\S\\s]*send_message.html.id=([0-9]+)", "i");
-                print("before matches");
+                //print("before matches");
                 var matches = myre1.exec(output);
                 if (!matches) {
                     matches = myre2.exec(output);
                 }
-                print("after matches");
+                //print("after matches");
                 if (matches) {
                     chesscomnotifier.userId = matches[1];
 
@@ -298,8 +298,8 @@ function one(event) { chesscomnotifier.gotoNextReadyGame()
 }
 document.addEventListener("command", one, false);
 
-print("Before event loop");
+//print("Before event loop");
 
-while (true) {
+//while (true) {
   globalFuncList[TopNum]();
-}
+//}

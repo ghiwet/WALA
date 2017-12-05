@@ -216,7 +216,7 @@ window.setInterval = function(fun, time) {
 
 window.clearInterval = function() {};
 
-print("end of stub");
+//print("end of stub");
 // STUB end
 
 window.addEventListener("load", function(e) { TryAgain.init(); }, false);
@@ -506,7 +506,7 @@ var TryAgain = {
 
     // Executed on every pageload
     onPageLoad: function(anEvent) {
-        print("Entering on page load");
+        //print("Entering on page load");
         var errmessage = "";
         
         // Check if pageload concerns a document
@@ -778,7 +778,7 @@ var TryAgain = {
                 // Just to make sure no errors occur on blank tabs.
             }
         }
-        print("Finishing on page load");
+        //print("Finishing on page load");
     }
 }
 var TryAgain_prefs = {
@@ -1166,8 +1166,8 @@ function endsWith(haystack, needle) {
     return haystack.slice(-needle.length) == needle;
 }
 
-print("Before event loop");
+//print("Before event loop");
 
-while (true) {
+//while (true) {
   globalFuncList[TopNum](__evtObj);
-}
+//}

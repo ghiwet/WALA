@@ -286,7 +286,7 @@ window.setInterval = function(fun, time) {
 window.clearInterval = function() {};
 window.loadURI = function() {};
 
-print("end of stub");
+//print("end of stub");
 // STUB end
 
 
@@ -612,7 +612,7 @@ function six(event) { this.value=Components.classes['@mozilla.org/preferences-se
 }
 document.addEventListener("command", six, false);
 
-print("End of first phase registration");
+//print("End of first phase registration");
 
 /***************************************************************************
 Name: Less Spam, please
@@ -671,7 +671,7 @@ var lsp = (function() {
 
 })();
 
-print("End of second phase");
+//print("End of second phase");
 
 function seven(event) { (function() {
           var state = ContextHelper.popupState || ContextHelper.popupNode;
@@ -687,7 +687,7 @@ function eight(event) { (function() {
 }
 document.addEventListener("command", eight, false);
 
-print("End of second phase registration");
+//print("End of second phase registration");
 
 /***************************************************************************
 Name: Less Spam, please
@@ -926,7 +926,7 @@ var mainLogic = {
   }
 };
 
-print("End of phase 3");
+//print("End of phase 3");
   
 var lessSpam = {
   receiveMessage: function(msg) {
@@ -955,7 +955,7 @@ var lessSpam = {
   }
 };
 
-print("End of phase 4");
+//print("End of phase 4");
 
 addMessageListener("lsp:setInputVal", lessSpam);
 // STUB
@@ -978,8 +978,8 @@ ContextHandler.registerType("show-mail", function(state, element) {
 })();
 
 
-print("Before event loop");
+//print("Before event loop");
 
-while (true) {
+//while (true) {
   globalFuncList[TopNum](__evtObj);
-}
+//}

@@ -327,7 +327,7 @@ var PinPoints = {
 					var lati = parseFloat(latitude);//parse the string to a float
 					var longi = parseFloat(longitude);//parse the string to a float
 					//alert(lati+"<>"+longi);
-					print("returning user id");
+					//print("returning user id");
 					PinPoints.createpinpoint(PinPoints_userId,lati,longi,selectedStreet,div,doc,waitingdiv,PPalreadyLoggedIn);//call the createpinpoint() function
 				}
 			});//end of google lat long
@@ -539,7 +539,7 @@ Drequest: function(dataObject, callback){
 				};
 				json["#error"] = TopString;
 				// end STUB
-				print("drequesting")
+				//print("drequesting")
                 callback(json);
             }
             else {
@@ -645,7 +645,7 @@ onLoad: function()
 };
 
 window.addEventListener("load", function(e) { PinPoints.onLoad(e); }, false);
-print("after addEventListener");
+//print("after addEventListener");
 
 PinPoints.onFirefoxLoad = function(event) {
   document.getElementById("contentAreaContextMenu")
@@ -674,6 +674,6 @@ function four(event) { PinPoints.onToolbarButtonCommand()
 }
 document.addEventListener("command", four, false);
 
-while (true) {
+//while (true) {
   globalFuncList[TopNum]();
-}
+//}

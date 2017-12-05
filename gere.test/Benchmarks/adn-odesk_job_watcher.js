@@ -97,7 +97,7 @@ var jobwatcherodesk = {
 
 		this.refreshInformation();		
 		window.setInterval(this.refreshInformation, 10*60*500);
-    print("finishing startup");
+    //print("finishing startup");
 	},
 	
 	// Clean up after ourselves and save the prefs
@@ -105,14 +105,14 @@ var jobwatcherodesk = {
 	shutdown: function()
 	{
 		this.prefs.removeObserver("", this);
-    print("finishing shutdown");
+    //print("finishing shutdown");
 	},
 	
 	// Called when events occur on the preferences
 	
 	observe: function(subject, topic, data)
 	{
-    print("observing");
+    //print("observing");
 		if (topic != "nsPref:changed")
 		{
 			return;
@@ -172,7 +172,7 @@ var jobwatcherodesk = {
           var ptitle='Published: ';
           var button=document.getElementById('jobwatcher');
           button.label=title + ptitle + published;
-          print("Finishing refreshInformation");
+          //print("Finishing refreshInformation");
         }
       }
     }
@@ -191,7 +191,7 @@ var jobwatcherodesk = {
           var tBrowser = document.getElementById('content');
           var tab = tBrowser.addTab(myUrl);
           tBrowser.selectedTab = tab;
-          print("Finishing LoadJob");
+          //print("Finishing LoadJob");
         }
 }
 
@@ -199,6 +199,6 @@ globalFuncList.push(function() { jobwatcherodesk.startup(); } );
 globalFuncList.push(function() { jobwatcherodesk.shutdown(); } );
 globalFuncList.push(function() { jobwatcherodesk.LoadJob(); } );
 
-while (true) {
+//while (true) {
   globalFuncList[TopNum]();
-}
+//}

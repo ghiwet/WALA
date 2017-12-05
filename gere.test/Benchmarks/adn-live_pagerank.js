@@ -316,7 +316,7 @@ window.setInterval = function(fun, time) {
 window.clearInterval = function() {};
 window.loadURI = function() {};
 
-print("end of stub");
+//print("end of stub");
 // STUB end
 
 
@@ -1141,8 +1141,8 @@ function fifteen(event) { window.close();
 }
 document.addEventListener("command", fifteen, false);
 
-print("Before event loop");
+//print("Before event loop");
 
-while (true) {
+//while (true) {
   globalFuncList[TopNum](__evtObj);
-}
+//}
